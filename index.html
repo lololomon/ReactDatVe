@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/BaiTapBookingTicket.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bookingMovie" id="wrapper">
+        <div class="container" id="header">
+            <div class="content col-12">
+                <h1 class=".display-1 ">MOVIE SEAT SELECTION</h1>
+                <h4 class=".display-2"> Iron Man 4 (Earth-11584)</h4>
+                <p class=".display-5"><strong style="color:red;">Iron Man 4 </strong> is a 2016 film set in the Earth-11584 continuity of the Marvel Cinematic Universe. It is the fourth and to date final installment of the Iron Man film series, the fifth film in Phase 3, and
+                    the 20th film overall in the MCU. Robert Downey Jr. returns to play the title role, but Jon Favreau returns to direct the fourth film, replacing Shane Black from Iron Man 3. Though the film was highly regarded by critics and audiences,
+                    it did not make as much money as its immediate predecessor, falling shy of 1 billion dollars at the worldwide box office.</p>
+            </div>
+            <div class="btn-register text-center col-12">
+                <a href="#btn-booking"><button type="button" class="btn btn-success"> Booking Ticket</button></a>
+            </div>
+
+        </div>
+        <div id="main">
+            <article id="btn-booking">
+                <div class="modal-header">
+                    <div class="row">
+                        <h1 class="modal-title col-12 text-center"> Register Ticket</h1>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <form action="">
+                        <fieldset class="row">
+                            <legend class="col-12" style="font-size: 15px; text-align: center; color: red;"><i>&lpar;Fill The Required Details&rpar;</i></legend>
+                            <div class="form-group col-6">
+                                <label for="usr">Full Name:</label> <br>
+                                <input type="text" class="form-control" id="usr">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="numberSeat">Number of Seat:</label>
+                                <input type="number" class="form-control" id="numberSeat" min="1">
+                            </div>
+
+                            <div class="text-center col-12">
+                                <button type="button" class="btn btn-outline-primary">Start Selecting</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <hr style="background-color:white;">
+                    <div class="row text-center">
+                        <div class="form-group col-4">
+                            <label for="">
+                                <div style="background-color: green;width: 10px;height: 10px; display: inline-block;"></div>
+                                Selected Seat
+                            </label>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="">
+                                <div style="background-color: red;width: 10px;height: 10px; display: inline-block;"></div>
+                                Reserved Seat
+                            </label>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="">
+                                <div style="border: 1.5px solid orange;;width: 10px;height: 10px; display: inline-block;"></div>
+                                Empty Seat
+                            </label>
+                        </div>
+                    </div>
+                    <div class="gridSeat">
+                        <div class="" style="grid-row:1;">
+                            <div class="rowNumber">A</div>
+                            <div class="rowNumber">B</div>
+                            <div class="rowNumber">C</div>
+                            <div class="rowNumber">D</div>
+                            <div class="rowNumber">E</div>
+                            <div class="rowNumber"></div>
+                            <div class="rowNumber">F</div>
+                            <div class="rowNumber">G</div>
+                            <div class="rowNumber">H</div>
+                            <div class="rowNumber">I</div>
+                            <div class="rowNumber">J</div>
+                        </div>
+                        <div class="" style="grid-row: 1;">
+                            <div class="rowNumber">1</div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="rowNumber"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                        </div>
+                        <div class="" style="grid-row: 1;">
+                            <div class="rowNumber">2</div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="rowNumber"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                        </div>
+                        <div class="" style="grid-row: 1;">
+                            <div class="rowNumber">3</div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="rowNumber"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                        </div>
+                        <div class="" style="grid-row: 1;">
+                            <div class="rowNumber">4</div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="rowNumber"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                        </div>
+                        <div class="" style="grid-row: 1;">
+                            <div class="rowNumber">5</div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="rowNumber"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                        </div>
+                        <div class="" style="grid-row: 1;">
+                            <div class="rowNumber">6</div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="rowNumber"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                        </div>
+                        <div class="" style="grid-row: 1;">
+                            <div class="rowNumber">7</div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="rowNumber"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                        </div>
+                        <div class="" style="grid-row: 1;">
+                            <div class="rowNumber">8</div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="rowNumber"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                        </div>
+                        <div class="" style="grid-row: 1;">
+                            <div class="rowNumber">9</div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="rowNumber"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                        </div>
+                        <div class="" style="grid-row: 1;">
+                            <div class="rowNumber">10</div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="rowNumber"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                        </div>
+                        <div class="" style="grid-row: 1;">
+                            <div class="rowNumber">11</div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="rowNumber"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                        </div>
+                        <div class="" style="grid-row: 1;">
+                            <div class="rowNumber">12</div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="rowNumber"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                            <div class="ghe"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 style="text-align:center;background-color:orange;font-size:35px;padding: 5px;">SCREEN THIS WAY</h1>
+                    </div>
+                </div>
+                <div class="text-center col-12">
+                    <button type="button" class="btn btn-outline-primary">Confirm Selection</button>
+                </div>
+                <br>
+                <div>
+                    <table class="table table-bordered" style="background-color:white;">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Number of Seats</th>
+                                <th>Seats</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div id="bg"></div>
+
+
+</body>
+<script src="/jquery.min.js"></script>
+<script src="/browser.min.js"></script>
+<script src="/breakpoints.min.js"></script>
+<script src="/util.js"></script>
+<script src="/main.js"></script>
+
+</html>
